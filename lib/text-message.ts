@@ -3,7 +3,7 @@ import { APIGatewayEvent } from 'aws-lambda'
 
 const dateFormat = 'yyyy-MM-dd HH:mm:ss'
 
-const MESSAGE_SUFFIX_REGEX = /\s*Skicka ditt nummer till slussen@stockholm.se för att avanmäla dig från sms-tjänsten.\s*/
+const MESSAGE_SUFFIX_REGEX = /\s*Skicka ditt nummer till slussen@stockholm.se för att avanmäla dig från sms-tjänsten\.?\s*/
 
 export default class TextMessage {
     text: string
